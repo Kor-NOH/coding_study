@@ -1,0 +1,11 @@
+n = 1260
+cnt = 0
+
+# 큰 단이의 화폐부터 차례대로 확인
+coin_types = [500, 100, 50, 10]
+
+for coin in coin_types:
+    cnt += n // coin
+    n %= coin
+
+print(cnt)
